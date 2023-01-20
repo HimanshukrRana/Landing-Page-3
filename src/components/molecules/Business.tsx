@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import React from 'react';
 
 import Button from '@/components/molecules/Buton';
@@ -16,10 +17,12 @@ const FeatureCard = ({ title, icon, content, index }: any) => {
       <div
         className={`h-[64px] w-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
       >
-        <img
+        <Image
           src={`/assets/${icon}`}
           alt='star'
           className='h-[50%] w-[50%] object-contain'
+          height={50}
+          width={50}
         />
       </div>
       <div className='ml-3 flex flex-1 flex-col'>

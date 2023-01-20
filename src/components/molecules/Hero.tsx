@@ -14,12 +14,10 @@ function Hero() {
       id='home'
       className={`flex flex-col md:flex-row ${styles.paddingY} dark:text-black`}
     >
-      <div
-        className={`flex-1 ${styles.flexStart} flex-col px-6 sm:px-16 xl:px-0`}
-      >
+      <div className={`flex-1 ${styles.flexStart} flex-col px-6 sm:px-16 `}>
         <div className='bg-discount-gradient mb-2 flex flex-row items-center rounded-[10px] py-[6px] px-4'>
           <img
-            src='/assets/discount.svg'
+            src='/assets/Discount.svg'
             alt='discount'
             className='h-[32px] w-[32px]'
           />
@@ -53,7 +51,9 @@ function Hero() {
         <Image
           src={robot}
           alt='billing'
-          className='relative z-[5] h-[100%] w-[100%]'
+          className='relative z-[5]'
+          height={1000}
+          width={600}
         />
 
         {/* gradient start */}
